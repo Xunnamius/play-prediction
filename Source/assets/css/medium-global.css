@@ -1,0 +1,46 @@
+body { background-color: #333; }
+
+/* ViewManager Class styles */
+#outer_wrapper, #inner_wrapper, .screen {
+	width: 285px;
+	height: 205px;
+	position: relative;
+}
+
+#outer_wrapper {
+	margin: auto;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+#screen_container { display: none; }
+
+.screen {
+	float: left;
+	background-color: white;
+}
+
+.screen p {
+	text-align: center;
+}
+/* End */
+ 
+#play_screen .button {
+	width: 85px;
+	height: 80px;
+	margin: 3px;
+	text-align: center;
+}
+
+#play_screen div#foot .button {
+	width: 120px;
+	height: 25px;
+	margin-left: 10px;
+}
+
+#orientation_screen form {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.clear { clear: both; }

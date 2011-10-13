@@ -1,0 +1,206 @@
+body {
+	font-size: 10.5pt;
+}
+
+.body { display: none; }
+
+#wrapper {
+	width: 900px;
+	margin: auto;
+}
+
+#wrapper > div, #header {
+	margin-top: 25px;
+	border: solid black 1px;
+	background-color: #EEE;
+	padding: 15px;
+}
+
+#header {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: none;
+	min-width: 825px;
+	max-width: 1500px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#header p
+{
+	float: right;
+	position: relative;
+	top: -10px;
+	font-size: 75%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 25px;
+	margin-top: -5px;
+	font-size: 200%;
+	font-variant: small-caps;
+}
+
+#nav {
+	text-align: left;
+}
+
+#nav li {
+	margin: .5px;
+	display: inline;
+}
+
+#log_tail {
+	height: 250px;
+	width: 500px;
+	border: solid blue 1px;
+}
+
+#log_content {
+	height: 85.5%;
+	padding: 5px;
+	overflow: auto;
+	position: relative;
+	border-bottom: solid blue 1px;
+}
+
+#log_tail_empty {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#dashboard form input { margin: 2px -2px; }
+#dashboard form input#text_cmd {
+	width: 280px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: solid black 1px;
+	border-radius: 2px;
+}
+
+#phase_chain {
+	position: relative;
+	width: 325px;
+	height: 90%;
+}
+
+p.vr {
+	height: 100px;
+	width: 1px;
+	border: solid black 2px;
+	position: absolute;
+	background-color: black;
+}
+
+#phase_chain .phase_box {
+	border: solid black 1px;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	position: relative;
+	margin-bottom: 10px;
+	opacity: .1;
+	
+	z-index: 999;
+}
+ /* Colors */
+#phase_preparation { background-color: orange; }
+#phase_away  { background-color: red; }
+#phase_polling { background-color: green; 	clear: both; }
+#phase_judgment  { background-color: yellow; 	clear: both; }
+#phase_waiting  { background-color: cyan; 	clear: both; }
+#phase_standby  { background-color: white; }
+
+/* Positions */
+#phase_chain #phase_preparation, #phase_chain #phase_waiting { margin-bottom: 25px; }
+#phase_polling, #phase_judgment, #phase_waiting { float: right; }
+
+/* vr positions */
+p#vr1 {
+	width: 101px;
+	height: 1px;
+	left: 151px;
+	top: 10px;
+	
+	border-left: none;
+	border-right: none;
+}
+
+p#vr2, p#vr3, p#vr4 { left: 248px; height: 8px; }
+p#vr2 {
+	top: 10px;
+	height: 38px;
+}
+
+p#vr3 { top: 78px; }
+p#vr4 { top: 115px; }
+
+#phase_status {
+	border: solid black 1px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 17px;
+	margin-right: 17.5px;
+}
+
+/* Status bar */
+#alerts > span {
+	float: right;
+	position: relative;
+	bottom: 15px;
+}
+
+/* Alert types*/
+#alerts .warning, #alerts .error { font-weight: bold; }
+#alerts .warning { color: #BBA200; }
+#alerts .error { color: red; }
+#alerts .info { color: blue; }
+#alerts .msg { color: green; }
+#alerts .text {  }
+
+/* Actives */
+#nav .active { text-decoration: underline; }
+#phase_chain p.phase_box.active { opacity: 1; }
+div#log_content a { color: blue; }
+.body.active { display: block; }
+
+/* Log tails */
+.ltype_log { color: black; }
+.ltype_info { color: dodgerblue; }
+.ltype_important { font-weight: bold; }
+.ltype_error { color: red; }
+.ltype_warn { color: #BBA200; }
+.ltype_superImportant { color: red; font-weight: bold; }
+.ltype_success { color: green; }
+.ltype_echo { color: orange; }
+.ltype_criticalError { color: red; font-weight: bold; }
+
+.lcontent { margin-bottom: 10px; width: 100%; }
+.lcontent:last-child { margin-bottom: 20px; }
+
+.RAW_STATUS .key { font-weight: bold; }
+
+/* Miscellaneous */
+.clear { clear: both; }
+.left, .right { position: relative; }
+.left { float: left; }
+.right { float: right; }
+.hide { display: none; }
+.underline { text-decoration: underline; }

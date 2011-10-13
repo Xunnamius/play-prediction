@@ -1,0 +1,9 @@
+SETENV REAL_ROOT 
+Options +FollowSymLinks
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{HTTP_HOST} ^www\.playprediction\.dev$
+	RewriteRule ^(.*)$ http://playprediction.dev/$1 [R=301,L]
+</IfModule>

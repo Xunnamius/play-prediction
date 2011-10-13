@@ -1,0 +1,54 @@
+/**
+ * Popup bar (above the header) + NoScript notice (body)
+ *
+ * Version: 1.0
+**/
+
+/* Main */
+.pop, .notice {
+	position: relative;
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	text-align: center;
+	border: solid black 2px;
+	font-weight: bold;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.pop a, .notice a { text-decoration: underline; }
+
+.pop:hover a, .notice:hover a {
+	text-decoration: none;
+	color: #838383;
+}
+
+.notice {
+	position: absolute;
+	height: auto;
+	text-align: center;
+	border: solid black 2px;
+	width: 250px;
+	font-weight: bold;
+	top: 38%;
+	left: 38%;
+}
+
+.pop.failure, .notice.default {
+	border-color: #F66;
+	background-color: #FAA;
+	color: #611;
+}
+
+.pop.warning {
+	border-color: #EE9;
+	background-color: rgb(250, 250, 170);
+	color: #661;
+}
+
+.pop.success {
+	border-color: #6F6;
+	background-color: #AFA;
+	color: #661;
+}
